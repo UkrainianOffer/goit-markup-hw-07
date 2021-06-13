@@ -36,6 +36,9 @@ p {
   margin-bottom: 0;
 }
 
+button {
+  cursor: pointer;
+}
 body {
   background-color: #ffffff;
   color: var(--primary-text-color);
@@ -95,6 +98,49 @@ img {
 }
 .modal-close-btn:hover {
   fill: var(--accent-color);
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  max-width: 206px;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 30px;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--primary-white-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill 250ms linear;
 }
 /* ==========L O G O========== */
 .logo {
@@ -166,7 +212,6 @@ img {
   color: var(--accent-color);
 }
 
-/* ==========C O N T A C T S - l I S T========== */
 .contacts {
   display: flex;
   margin-left: auto;
@@ -314,14 +359,6 @@ img {
 }
 
 /* ==========SECTION - TITLE========== */
-.section-title {
-  color: var(--title-text-color);
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-bottom: 50px;
-}
 .section {
   padding-bottom: 94px;
 }
@@ -386,40 +423,6 @@ img {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.social-list {
-  display: flex;
-  justify-content: space-between;
-  max-width: 206px;
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-bottom: 30px;
-}
-.social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: #fff;
-  transition: background-color 250ms linear, color 250ms linear;
-}
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--primary-white-color);
-}
-
-.social-list-icon {
-  width: 20px;
-  height: 20px;
-  fill: #afb1b8;
-  transition: fill 250ms linear;
 }
 
 .section-item {
@@ -557,20 +560,6 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
-button {
-  cursor: pointer;
-}
-/* ==========A D R E S S========== */
-.adress {
-  color: #ffffff;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
 
 /* ==========ПОСТОЯННЫЕ КЛИЕНТЫ========== */
 .customers {
@@ -611,6 +600,24 @@ button {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.logo-footer {
+  color: var(--primary-white-color);
+  font-family: raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  display: block;
+}
+.adress {
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
 .footer-mail {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -629,16 +636,6 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-
-.logo-footer {
-  color: var(--primary-white-color);
-  font-family: raleway, cursive;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-  display: block;
-}
-
 .footer-list {
   display: flex;
   justify-content: space-between;
@@ -690,7 +687,7 @@ button {
   justify-content: center;
   align-items: center;
 }
-/* ==========RIGHT RIGHT FOOTER========== */
+
 .subscribe-title {
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -734,10 +731,6 @@ button {
   cursor: pointer;
 
   transition: box-shadow 250ms var(--cubic);
-
-  &:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
 }
 
 .subscribe-mail-button-ico {
