@@ -78,6 +78,9 @@ img {
 }
 
 /* ==========SITE - NAV========== */
+.site-nav {
+}
+
 .site-nav .menu-link {
   color: var(--title-text-color);
   font-weight: 500;
