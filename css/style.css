@@ -8,6 +8,17 @@
 }
 /* вторичный цвет боди #F5F4FA */
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px 1px 1px 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -41,18 +52,6 @@ ul {
 img {
   display: block;
 }
-
-.visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  clip: rect(1px 1px 1px 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 0 !important;
-  width: 0 !important;
-  overflow: hidden;
-}
-
 .list {
   list-style: none;
 }
@@ -63,7 +62,40 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.setion {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+/* ==========COMPONENTS========== */
+.modal-form-btn {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-left: 154px;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.modal-close-btn:hover {
+  fill: var(--accent-color);
+}
 /* ==========L O G O========== */
 .logo {
   color: #000000;
@@ -732,21 +764,6 @@ button {
   background-color: var(--primary-white-color);
   padding: 40px;
 }
-.modal-close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0;
-}
-.modal-close-btn:hover {
-  fill: var(--accent-color);
-}
 
 .button-list-icon {
   width: 18px;
@@ -852,18 +869,4 @@ button {
 }
 .modal-form-checkbox-link {
   color: #2196f3;
-}
-.modal-form-btn {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  width: 200px;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  margin-top: 30px;
-  margin-left: 154px;
 }
