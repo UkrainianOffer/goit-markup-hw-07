@@ -21,10 +21,10 @@
   padding-bottom: 6px;
   padding-right: 22px;
   padding-left: 22px;
-}
 
-.button.secondary:hover,
-.button.secondary:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+  }
 }

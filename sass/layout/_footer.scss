@@ -12,6 +12,10 @@
   text-decoration: none;
   display: block;
 }
+.footer__logo-part {
+  color: var(--accent-color);
+}
+
 .footer__adress {
   color: #ffffff;
   font-family: Roboto;
@@ -58,6 +62,11 @@
   width: 20px;
   height: 20px;
   fill: #ffffff;
+
+  .footer__list-link:hover &,
+  .footer__list-link:focus & {
+    fill: var(--primary-white-color);
+  }
 }
 
 .footer__list-link {
@@ -68,6 +77,11 @@
   height: 44px;
   border-radius: 50%;
   background-color: #43444d;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .footer__social {
   color: var(--primary-white-color);
@@ -83,15 +97,6 @@
   justify-content: space-between;
 }
 
-.footer__list-link:hover,
-.footer__list-link:focus {
-  background-color: var(--accent-color);
-}
-
-.footer__list-link:hover .footer__list-icon,
-.footer__list-link:focus .footer__list-icon {
-  fill: var(--primary-white-color);
-}
 .footer__subscribe-title {
   text-transform: uppercase;
   margin-bottom: 20px;

@@ -5,19 +5,20 @@
 .section__list {
   display: flex;
   flex-wrap: wrap;
-}
 
-.section__list:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section__list-item {
   position: relative;
   display: flex;
   flex-wrap: wrap;
-}
-.section__list-item:not(:last-child) {
-  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section__list-overlay {
