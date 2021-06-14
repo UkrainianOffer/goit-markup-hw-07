@@ -2,6 +2,9 @@
   padding-top: 24px;
   padding-bottom: 24px;
 }
+.header__menu {
+  display: flex;
+}
 
 .header__menu-item .header__menu-link {
   color: var(--title-text-color);
